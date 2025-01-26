@@ -47,14 +47,11 @@ void find_cutpoints(int n) {
 }
 
 int main() {
-    int n,q; 
+    int n,q;
     cin >> n >> q;
 
-    vi a(n); 
-    for(auto &i : a) cin >> i;
-    
     adj.assign(n, vi());
-    
+
     for (int i = 0; i < q; i++){
         int u,v; cin >> u >> v;
         u--; v--;
@@ -64,10 +61,10 @@ int main() {
 
     find_cutpoints(n);
 
+
     for (auto &i : cities){
         cout << i << ' ';
     }
-
 
     return 0;
 }
