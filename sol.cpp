@@ -63,7 +63,7 @@ int main() {
 
 
     for (auto &i : cities){
-        cout << i << ' ';
+        cout << i+1 << ' ';
     }
 
     return 0;
